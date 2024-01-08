@@ -1,38 +1,133 @@
-.App {
+* {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  width: 100vw !important;
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  width: 100vw;
+}
+
+nav img.devsoc-logo {
+  scale: 2.5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  background-image: url('./assets/img/bg-7.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  font-weight: bold;
+}
+
+section.about-us {
+  padding: 3rem 3rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section.about-us div.content {
+  width: 60%;
+  margin: 0 3rem;
+}
+
+section.about-us div.image {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section.about-us div.image img {
+  width: 85%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+section.about-us h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+section.about-us p {
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 1100px) {
+  section.about-us p {
+      font-size: 1.1rem !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 950px) {
+  section.about-us div.content {
+      margin: 1rem
+  }
+
+  section.about-us div.image {
+      text-align: right;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  section.about-us {
+      margin: 1rem !important;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      flex-direction: column-reverse;
+  }
+
+  section.about-us div.image {
+      text-align: center;
+  }
+
+  section.about-us div.content {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  section.apna-insti img {
+      width: 80%;
+      border-radius: 20px !important;
+  }
+}
+
+section.what-do-we-do h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+section.what-do-we-do h3 {
+  color: #2c2a2a;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+section.what-do-we-do h4 {
+  color: #2c2a2ae8;
+  font-size: 1.1rem;
+}
+
+section.apna-insti > div > div {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+section.apna-insti div.skewed-image {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
